@@ -34,7 +34,7 @@ $(function() {
         }
     }
 
-    $.get("http://ipinfo.io", function(response) {
+    $.get("https://ipinfo.io", function(response) {
         ipinfo = response;
         var iphash = sha1(ipinfo.ip);
         var urls = getDataURLS(iphash, 512)
